@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- ===== CSS ===== -->
+    <link rel="stylesheet" href="home.css">
+
+    <!-- ===== Boxicons CSS ===== -->
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>CSE Conference</title>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="nav-bar">
+                    <i class='bx bx-menu sidebarOpen'></i>
+                    <span class="logo navLogo"><img src="imges/auts logo.png" alt="logo" height="45px"
+                            width="65px"></span>
+
+                    <div class="menu">
+                        <div class="logo-toggle">
+                            <span class="logo"><a href="#">Akal University</a></span>
+                            <i class='bx bx-x siderbarClose'></i>
+                        </div>
+
+                        <ul class="nav-links">
+                            <li><a href="#header">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#committee">COMMITTEE</a></li>
+                            <li><a href="#important-dates">Important-Dates</a></li>
+                            <li><a href="#venue">Venue</a></li>
+                            <li><a href="#schedule">Schedule</a></li>
+                            <li><a href="#registration-form">Registration</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="darkLight-searchBox">
+                        <div class="dark-light">
+                            <i class='bx bx-moon moon'></i>
+                            <i class='bx bx-sun sun'></i>
+                        </div>
+
+                        <div class="searchBox">
+                            <div class="searchToggle">
+                                <i class='bx bx-x cancel'></i>
+                                <i class='bx bx-search search'></i>
+                            </div>
+
+                            <div class="search-field">
+                                <input type="text" placeholder="Search...">
+                                <i class='bx bx-search'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+            <div class="header-text">
+                <p></p>
+                <h1>International Conference on <span><br>
+                        Artificial Intelligence,<br></span>and Optimization Techniques</h1><BR>
+                <h1>ICAOT 2025</h1></BR>
+            </div>
+        </div>
+    </div>
+    <!---------------- About  -------- -->
+
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="imges/about_img.png" alt="30%"> <!-- Removed spaces in image filename -->
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About</h1>
+                    <p>The International Conference on Artificial Intelligence and Optimization Techniques is a
+                        prestigious event that brings together researchers, academics, industry experts, and
+                        practitioners from around the world to discuss recent advancements and challenges in the fields
+                        of artificial intelligence (AI) and optimization techniques. These fields play crucial roles in
+                        various domains such as computer science, engineering, healthcare, finance, and many
+                        others.<br>Akal University's participation in this conference, especially from its campus in
+                        Talwandi Sabo, Bathinda, highlights the institution's commitment to cutting-edge research and
+                        academic excellence in these fields. Presenting research from Akal University at such an
+                        esteemed international platform not only showcases the university's contributions to the global
+                        academic community but also provides an opportunity for its faculty and students to interact
+                        with leading experts and gain insights into the latest developments in AI and optimization
+                        techniques.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links" onclick="opentab('about-')">About Akal University</p>
+                        <p class="tab-links" onclick="opentab('about-1')">Where</p>
+                        <p class="tab-links" onclick="opentab('about-2')">When</p>
+                    </div>
+                    <div class="tab-contents" id="about-">
+                        <ul>
+                            <li><span>The Akal University</span><br>Established under the Punjab
+                                Government Act No. 25 (2015) and approved under the Section 2(f) of UGC Act (1956) to
+                                confer degrees. Akal University has a mission and vision to establish permanent peace in
+                                the world through values based scientific education and spiritual rejuvenation creating
+                                good global citizens. With blessings from Sant Baba Attar Singh Ji Maharaj, the
+                                establishment of Akal University under the leader ship of Baba Iqbal Singh Ji by the
+                                Kalgidhar Trust (Baru Sahib) is culmination of what the Tenth Sikh Guru, Guru Gobind
+                                Singh Ji, prophesied about three centuries ago. Akal University has been mandated to
+                                carry out activities pertaining to the three basic principles of higher education:
+                                Teaching, Learning and Research. The University is successfully running UG (Honours), PG
+                                (Honours) and PhD programs in Mathematics, Physics, Chemistry, Botany, Zoology, English,
+                                Punjabi, Psychology, Commerce, Economics, Social sciences, and UG in Sri Guru Granth
+                                Sahib Studies. Striving for excellence in teaching and research, the University also
+                                offers BCA (Hons), B.Tech. (CSE), MBA and four years integrated B.Sc.-B.Ed./B.A.-B.Ed
+                                program. The University has faculty members who are highly qualified with exceptionally
+                                good academic records. The university has a firm resolve to provide a drug-free
+                                environment and to create a disciplined campus. A magnificent building with ultra-modern
+                                facilities for teaching and research is the hallmark of the University.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="about-1">
+                        <ul>
+                            <li><span>Akal University Campus, Talwandi Sabo</span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="about-2"> <!-- Fixed a typo, changed "=" to ":" -->
+                        <ul>
+                            <li><span></span><br>Wednesday to Friday
+                                20-22 November 2025</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!----Contact us-->
+    
+
+    <script>
+
+        const body = document.querySelector("body"),
+            nav = document.querySelector("nav"),
+            modeToggle = document.querySelector(".dark-light"),
+            searchToggle = document.querySelector(".searchToggle"),
+            sidebarOpen = document.querySelector(".sidebarOpen"),
+            siderbarClose = document.querySelector(".siderbarClose");
+
+        let getMode = localStorage.getItem("mode");
+        if (getMode && getMode === "dark-mode") {
+            body.classList.add("dark");
+        }
+
+        // js code to toggle dark and light mode
+        modeToggle.addEventListener("click", () => {
+            modeToggle.classList.toggle("active");
+            body.classList.toggle("dark");
+
+            // js code to keep user selected mode even page refresh or file reopen
+            if (!body.classList.contains("dark")) {
+                localStorage.setItem("mode", "light-mode");
+            } else {
+                localStorage.setItem("mode", "dark-mode");
+            }
+        });
+
+        // js code to toggle search box
+        searchToggle.addEventListener("click", () => {
+            searchToggle.classList.toggle("active");
+        });
+
+
+        //   js code to toggle sidebar
+        sidebarOpen.addEventListener("click", () => {
+            nav.classList.add("active");
+        });
+
+        body.addEventListener("click", e => {
+            let clickedElm = e.target;
+
+            if (!clickedElm.classList.contains("sidebarOpen") && !clickedElm.classList.contains("menu")) {
+                nav.classList.remove("active");
+            }
+        });
+
+    </script>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) { // Fixed variable name
+                tablink.classList.remove("active-link"); // Updated method name
+            }
+            for (tabcontent of tabcontents) { // Fixed variable name
+                tabcontent.classList.remove("active-tab"); // Updated method name
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+</body>
+
+</html>
