@@ -300,24 +300,69 @@ body.dark .search-field i{
         margin-top: 20px;
     }
 }
-.header-text {
-  margin-top: 20vh;
-  /* Adjust as needed */
-  font-size: 30px;
-  text-align: center;
-  /* Centers horizontally */
-}
-
-.header-text h1 {
-  font-size: 60px;
-  margin-top: 50px;
-  /* Adjust as needed */
-}
-
-.header-text h1 span {
-  color: #3cd9fc;
-}
-
+.img{
+    background: url('imges/WhatsApp\ Image\ 2024-01-26\ at\ 09.27.19_ee241d8b.jpg')no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  .img::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.4);
+  }
+  .center{
+    position: absolute;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    padding: 0 20px;
+    text-align: center;
+  }
+  .center .title{
+    color: #fff;
+    font-size: 55px;
+    font-weight: 600;
+  }
+  .center .sub_title{
+    color: #fff;
+    font-size: 52px;
+    font-weight: 600;
+  }
+  .center .btns{
+    margin-top: 20px;
+  }
+  .center .btns button{
+    height: 55px;
+    width: 170px;
+    border-radius: 5px;
+    border: none;
+    margin: 0 10px;
+    border: 2px solid white;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 10px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+  }
+  .center .btns button:first-child{
+    color: #fff;
+    background: none;
+  }
+  .btns button:first-child:hover{
+    background: white;
+    color: black;
+  }
+  .center .btns button:last-child{
+    background: white;
+    color: black;
+  }
 /* about--*/
 
 #about {
@@ -401,16 +446,231 @@ body.dark .search-field i{
 .tab-contents.active-tab {
   display: block;
 }
-@media only screen and (max-width:600px){
-    #header{
-        background-image: url(imges/small\ .jpg);
-    }
-    .header-text{
-        margin-top: 50%;
-        font-size: 19px;
-    }
-    .header-text h1{
-        font-size: 39px;
-    }
+/*-----contact ---*/
+.committee-container {
+    text-align: center;
+    padding: 20px;
+}
 
-/*-----Contact us----*/
+.committee-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.committee {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.member {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 300px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.member:hover {
+    transform: scale(1.05);
+}
+
+.member img {
+    width: 100%;
+    border-radius: 5%;
+}
+
+.details {
+    margin-top: 15px;
+}
+
+.details .title {
+    font-weight: bold;
+    color: #777;
+}
+
+.details .name {
+    font-size: 1.2em;
+    margin: 5px 0;
+    color: #333;
+}
+
+.details .position {
+    color: #555;
+}
+
+.committee-listings {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.committee-listing {
+    background-color: #fff;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 300px;
+    text-align: left;
+}
+
+.committee-listing h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.committee-listing p {
+    margin: 5px 0;
+    font-size: 1em;
+    color: #333;
+}
+
+.committee-listing p strong {
+    color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .committee {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .committee-listings {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*-----Fee---*/
+.bank-details-container {
+    text-align: center;
+    padding: 20px;
+}
+
+.bank-details-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #333;
+    position: relative;
+    animation: slideDown 0.5s ease-out;
+}
+
+.payment-details {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    gap: 20px;
+    animation: fadeIn 1s ease-out;
+}
+
+.account-info, .qr-code {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.account-info:hover, .qr-code:hover {
+    transform: scale(1.05);
+}
+
+.account-info h2, .qr-code h2 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+table td:first-child {
+    font-weight: bold;
+    color: #555;
+}
+
+.qr-code img {
+    width: 30%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.qr-code img:hover {
+    transform: rotate(360deg);
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .payment-details {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*-----Footer---*/
+.footer {
+    background-color: #141414;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+}
+
+.footer span {
+    color: #ff0000;
+}
+
+.back-to-top {
+    background-color: #ff0000;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+}
+/*-------Committee*/
+
+@media only screen and (max-width:600px){}
+   
