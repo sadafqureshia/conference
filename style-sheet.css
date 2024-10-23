@@ -644,6 +644,178 @@ table td:first-child {
         align-items: center;
     }
 }
+/*------contact*/
+.contact-us {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: white;
+}
+
+.contact-us h2 {
+    color: #1a1a44;
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.contact-us p {
+    color: #b3b3b3;
+    font-size: 1.2em;
+    margin-top: 0;
+}
+
+.underline {
+    width: 50px;
+    height: 2px;
+    background-color: #ff3344;
+    margin: 10px auto 40px;
+}
+
+.contact-options {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.option {
+    flex: 1;
+    min-width: 200px;
+    max-width: 300px;
+    padding: 20px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.option:hover {
+    transform: translateY(-10px);
+}
+
+.icon img {
+    width: 50px;
+    height: 50px;
+}
+
+.option h3 {
+    color: #1a1a44;
+    font-size: 1.5em;
+    margin: 15px 0;
+}
+
+.option p {
+    color: #666;
+    font-size: 1em;
+    margin: 0;
+}
+
+.option a {
+    color: #1a1a44;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.option a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .contact-options {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .option {
+        max-width: 90%;
+        margin: 20px 0;
+    }
+} 
+
+/*-----useful limks ---*/
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-between;
+}
+
+.intro {
+    flex: 2;
+    min-width: 300px;
+    margin: 20px;
+}
+
+.intro .logo {
+    width: 100px;
+}
+
+.links, .contact {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+}
+
+h3 {
+    color: #1a1a44;
+    border-bottom: 2px solid #ff3344;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #ff3344;
+    font-weight: bold;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+.contact p {
+    margin: 10px 0;
+}
+
+.contact a {
+    color: #1a1a44;
+    text-decoration: none;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .main-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .intro, .links, .contact {
+        margin: 10px 0;
+        width: 90%;
+    }
+}
 /*-----Footer---*/
 .footer {
     background-color: #141414;
